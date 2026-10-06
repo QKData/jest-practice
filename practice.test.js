@@ -1,4 +1,4 @@
-import {capitalize, reverseString, Calculator} from "./practice.js"
+import {capitalize, reverseString, Calculator, analyzeArray} from "./practice.js"
 
 test("Capitalize javascript to be Javascript", () => {
     expect(capitalize("javascript")).toBe("Javascript");
@@ -24,3 +24,12 @@ test("Devide 2 numbers", () => {
 test("Multiply 2 numbers", () => {
     expect(Calculator.multiply(3, 2)).toBe(6);
 });
+
+test("Analyze array", () => {
+    expect(analyzeArray([1,8,3,4,2,6])).toMatchObject({
+        average: 4,
+        min: 1,
+        max: 8,
+        length: 6
+    })
+})

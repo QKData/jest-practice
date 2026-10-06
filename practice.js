@@ -30,4 +30,20 @@ const Calculator = {
     }
 }
 
-export {capitalize, reverseString, Calculator};
+function analyzeArray(a) {
+    a.sort();
+    for (let i = 0; i <= a.length; i++) {
+        average = a[a.length/2];
+        min = a[0];
+        max = a[a.length - 1];
+        length = a.length;
+    }
+    return {
+        average: average,
+        min: min,
+        max: max,
+        length: length
+    }
+}
+
+export {capitalize, reverseString, Calculator, analyzeArray};
