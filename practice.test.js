@@ -1,4 +1,4 @@
-import {capitalize, reverseString, Calculator, analyzeArray} from "./practice.js"
+import {capitalize, reverseString, Calculator, analyzeArray, caesarCipher} from "./practice.js"
 
 test("Capitalize javascript to be Javascript", () => {
     expect(capitalize("javascript")).toBe("Javascript");
@@ -32,4 +32,8 @@ test("Analyze array", () => {
         max: 8,
         length: 6
     })
-})
+});
+
+test("Caesar Cipher Encoder", () => {
+    expect(caesarCipher("Hello, World!", 3)).toBe("Khoor, Zruog!");
+});
